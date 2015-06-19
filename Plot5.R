@@ -13,4 +13,5 @@ bal_MV <- summarize(bal_MV, sum(Emissions))
 #Generate the graph in the same directory as the source code
 png("Plot5.png")
 plot(bal_MV, main="Motor Vehicle Related PM2.5 Emissions in Bal City, MD by YR", ylab="Total Emissions")
+lines(bal_MV)
 dev.off()
