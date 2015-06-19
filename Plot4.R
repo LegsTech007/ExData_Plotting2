@@ -12,4 +12,5 @@ usa_coal <- summarize(usa_coal, sum(Emissions)/1000)
 #Generate the graph in the same directory as the source code
 png("Plot4.png")
 plot(usa_coal, main="Coal Related PM2.5 Emissions in USA by YR", ylab="Total Emissions (in 1000s")
+lines(usa_coal)
 dev.off()

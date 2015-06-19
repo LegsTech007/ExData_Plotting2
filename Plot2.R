@@ -11,4 +11,5 @@ bal_em_yr <- summarize(bal_em_yr, sum(Emissions))
 #Generate the graph in the same directory as the source code
 png("Plot2.png")
 plot(bal_em_yr, main="Total PM2.5 emissions in Baltimore City, Maryland", ylab="Total Emissions")
+lines(bal_em_yr)
 dev.off()
